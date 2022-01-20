@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+{% block content %}
+
+    <div class="home-container">
+        <!-- Topics -->
+        <div>
+            {% include 'topics_component.html' %}      
+        </div>
+
+        <div>
+            <h3>{{room_count}} room available</h3>   
+            
+            {% include 'feed_component.html' %}
+        </div>
+        
+        <!-- Activity Component -->
+        <div>
+            {% include 'activity_component.html' %}
+            
+        </div>
+    </div>
+{% endblock content %}
+    
