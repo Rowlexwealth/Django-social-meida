@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-g9)u$77h*ld0+3cu66v9wm3ql3%2v+vt0@$1-hvxhir$09u1dm
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://projectrowland.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -85,11 +85,10 @@ WSGI_APPLICATION = 'main.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd372ir1dthgmst',
-        'USER': 'nnlnvucmhutaxp',
-        'PASSWORD': 'c6ccf570b54ee86a7a56bafe55e41a08ae61821ea4317bf2c469f41cc332411e',
-        'HOST': 'ec2-34-230-198-12.compute-1.amazonaws.com',
-        'PORT': '5432',
+        'NAME': 'project',
+        'USER': 'postgres',
+        'PASSWORD': 'Love2580()',
+        'HOST': 'localhost',
     }
 }
 
